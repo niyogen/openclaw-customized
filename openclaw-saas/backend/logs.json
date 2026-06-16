@@ -1,0 +1,251 @@
+{
+    "events": [
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420205776,
+            "message": "INFO:     Started server process [1]",
+            "ingestionTime": 1778420210614,
+            "eventId": "39660095864928974782357437773833166823227013152498057216"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420205776,
+            "message": "INFO:     Waiting for application startup.",
+            "ingestionTime": 1778420210614,
+            "eventId": "39660095864928974782357437773833166823227013152498057217"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420205838,
+            "message": "INFO:     Application startup complete.",
+            "ingestionTime": 1778420210614,
+            "eventId": "39660095866311620984666336408608381356131211565868843010"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420205838,
+            "message": "INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)",
+            "ingestionTime": 1778420210614,
+            "eventId": "39660095866311620984666336408608381356131211565868843011"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420213465,
+            "message": "INFO:     172.31.35.48:6468 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420215603,
+            "eventId": "39660096036399404613859399115132736797030560916129316864"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420213506,
+            "message": "INFO:     172.31.27.100:51118 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420215603,
+            "eventId": "39660096037313735166999154663935701246209143737874513921"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420213610,
+            "message": "INFO:     172.31.2.70:53882 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420215603,
+            "eventId": "39660096039633012667646339470655415946564573334496477186"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420243482,
+            "message": "INFO:     172.31.35.48:44090 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420245566,
+            "eventId": "39660096705800873238153113990833576177036923247559245824"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420243509,
+            "message": "INFO:     172.31.27.100:3142 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420245566,
+            "eventId": "39660096706402993358513440815655040570398429008220717057"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420243619,
+            "message": "INFO:     172.31.2.70:60802 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420245566,
+            "eventId": "39660096708856075330351809361223969580389748773878562818"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420273504,
+            "message": "INFO:     172.31.35.48:54036 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420275566,
+            "eventId": "39660097375313845588439481982286793773226932794999439360"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420273514,
+            "message": "INFO:     172.31.27.100:7730 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420275566,
+            "eventId": "39660097375536853040424788213702150955953416410059243521"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420273636,
+            "message": "INFO:     172.31.2.70:18052 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420275566,
+            "eventId": "39660097378257543954645524236969508585216516513788854274"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420288413,
+            "message": "INFO:     172.31.2.70:12082 - \"PROPFIND / HTTP/1.1\" 405 Method Not Allowed",
+            "ingestionTime": 1778420290563,
+            "eventId": "39660097707795655753332542417572743454652683634784927744"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420303520,
+            "message": "INFO:     172.31.27.100:24626 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420305565,
+            "eventId": "39660098044693013467534666234889230618403721577694756864"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420303534,
+            "message": "INFO:     172.31.35.48:29992 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420305565,
+            "eventId": "39660098045005223900314094958870730674220798638778482689"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420303646,
+            "message": "INFO:     172.31.2.70:11436 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420305565,
+            "eventId": "39660098047502907362549524750722731120757415127448289282"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420333527,
+            "message": "INFO:     172.31.27.100:30666 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420335566,
+            "eventId": "39660098713871474639843074879220500644078155657267445760"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420333564,
+            "message": "INFO:     172.31.35.48:9490 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420335566,
+            "eventId": "39660098714696602212188707935457322220166145032988721153"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420333663,
+            "message": "INFO:     172.31.2.70:10910 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420335566,
+            "eventId": "39660098716904375986843239626469358329158332822080782338"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420363533,
+            "message": "INFO:     172.31.27.100:61998 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420365566,
+            "eventId": "39660099383027635066952952900409003180063210726808551424"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420363592,
+            "message": "INFO:     172.31.35.48:26934 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420365566,
+            "eventId": "39660099384343379033666259665759610558149464055661395969"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420363679,
+            "message": "INFO:     172.31.2.70:44958 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420365566,
+            "eventId": "39660099386283543865938423879073218047869871506681692162"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420393539,
+            "message": "INFO:     172.31.27.100:39246 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420395569,
+            "eventId": "39660100052183795494062830921601275406192289918111318016"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420393618,
+            "message": "INFO:     172.31.35.48:28516 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420395569,
+            "eventId": "39660100053945554364746750149782597149731510477083770881"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420393695,
+            "message": "INFO:     172.31.2.70:8310 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420395569,
+            "eventId": "39660100055662711745033608131680847456725434313044262914"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420423545,
+            "message": "INFO:     172.31.27.100:5302 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420425568,
+            "eventId": "39660100721339955921172708942788600104871296116546797568"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420423649,
+            "message": "INFO:     172.31.35.48:14622 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420425568,
+            "eventId": "39660100723659233421819893749508314805226725713168760833"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420423698,
+            "message": "INFO:     172.31.2.70:45588 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420425568,
+            "eventId": "39660100724751969936547894283443565000586495426961801218"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420434371,
+            "message": "INFO:     172.31.27.100:36012 - \"POST /api/orders HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420435564,
+            "eventId": "39660100962767823440465235085138890831914392868105682944"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420436919,
+            "message": "Sent success email to itranga@gmail.com",
+            "ingestionTime": 1778420440549,
+            "eventId": "39660101019590122206321262855798243832435194379287265280"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420436919,
+            "message": "INFO:     172.31.27.100:36016 - \"POST /api/webhook/stripe HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420440549,
+            "eventId": "39660101019590122206321262855798243832435194379287265281"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420453552,
+            "message": "INFO:     172.31.27.100:18730 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420455570,
+            "eventId": "39660101390518417093481117587121016329479243063340957696"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420453679,
+            "message": "INFO:     172.31.35.48:26072 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420455570,
+            "eventId": "39660101393350611733694506726096052550105584974600470529"
+        },
+        {
+            "logStreamName": "ecs/openclaw-backend/c5be365540cb4e3388ddef237b4c746c",
+            "timestamp": 1778420453715,
+            "message": "INFO:     172.31.2.70:52056 - \"GET /docs HTTP/1.1\" 200 OK",
+            "ingestionTime": 1778420455570,
+            "eventId": "39660101394153438560841609159191338407920925988815765506"
+        }
+    ],
+    "searchedLogStreams": [],
+    "nextToken": "Bxkq6kVGFtq2y_MoigeqscPOdhXVbhiVtLoAmXb5jCrtBZZ014lg4_JG4IkkQexRyiy5w4GSr2oZmHnS0xkPpCBFlXvENHb6yei5b8H9lAX3vKJ7vmE9lWE1Ls8l8cMrHQ8s62VJUVml12xV88rocSc80KSo5OmC7Jh4gHtV1cWXPoTv7rWCDJHAsR04Iu_j8t78sh-2VUCrRKjzHL06Sb76w0KGisDuFEOJIVumtsP5S1V-43Vl5O0jPwTDRSTEbWnZQjSl26r5PYqyFqbGr2MT0m9MzFJcioJ-WUh2Qvc"
+}

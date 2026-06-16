@@ -1,0 +1,13 @@
+.git
+.gitignore
+.next
+node_modules
+*.log
+*.md
+.env*
+.vercel
+fix_*.py
+rename*.py
+revert*.py
+update_theme.py
+tsconfig.tsbuildinfo

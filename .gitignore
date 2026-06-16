@@ -1,0 +1,9 @@
+# Ignore all files and directories by default
+/*
+
+# Except these directories
+!/openclaw-saas/
+!/openclaw-saas-website/
+
+# Except the root .gitignore itself
+!.gitignore

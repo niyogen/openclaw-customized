@@ -1,0 +1,49 @@
+{
+  "containerDefinitions": [
+    {
+      "name": "openclaw-backend",
+      "image": "582604091763.dkr.ecr.us-east-1.amazonaws.com/openclaw-backend:v3",
+      "cpu": 0,
+      "portMappings": [
+        {
+          "containerPort": 8000,
+          "hostPort": 8000,
+          "protocol": "tcp"
+        }
+      ],
+      "essential": true,
+      "environment": [
+        {
+          "name": "ENVIRONMENT",
+          "value": "production"
+        },
+        {
+          "name": "DATABASE_URL",
+          "value": "postgresql://postgres:SuperSecretPassword123@openclaw-saas-db.cmt466aga8u0.us-east-1.rds.amazonaws.com:5432/postgres"
+        }
+      ],
+      "mountPoints": [],
+      "volumesFrom": [],
+      "systemControls": [],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/openclaw-backend",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ],
+  "family": "openclaw-backend",
+  "taskRoleArn": "arn:aws:iam::582604091763:role/ecsTaskRole",
+  "executionRoleArn": "arn:aws:iam::582604091763:role/ecsTaskExecutionRole",
+  "networkMode": "awsvpc",
+  "volumes": [],
+  "placementConstraints": [],
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "cpu": "256",
+  "memory": "512"
+}

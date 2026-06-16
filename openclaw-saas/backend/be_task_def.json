@@ -1,0 +1,68 @@
+{
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:582604091763:task-definition/openclaw-backend:7",
+    "containerDefinitions": [
+        {
+            "name": "openclaw-backend",
+            "image": "582604091763.dkr.ecr.us-east-1.amazonaws.com/openclaw-backend:latest",
+            "cpu": 0,
+            "portMappings": [
+                {
+                    "containerPort": 8000,
+                    "hostPort": 8000,
+                    "protocol": "tcp"
+                }
+            ],
+            "essential": true,
+            "environment": [
+                {
+                    "name": "ENVIRONMENT",
+                    "value": "production"
+                },
+                {
+                    "name": "DATABASE_URL",
+                    "value": "postgresql://postgres:SuperSecretPassword123@openclaw-saas-db.cmt466aga8u0.us-east-1.rds.amazonaws.com:5432/postgres"
+                }
+            ],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "systemControls": []
+        }
+    ],
+    "family": "openclaw-backend",
+    "taskRoleArn": "arn:aws:iam::582604091763:role/ecsTaskRole",
+    "executionRoleArn": "arn:aws:iam::582604091763:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "revision": 7,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.ecr-auth"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.task-iam-role"
+        },
+        {
+            "name": "ecs.capability.execution-role-ecr-pull"
+        },
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "FARGATE",
+        "MANAGED_INSTANCES"
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512",
+    "registeredAt": "2026-05-02T04:57:29.924000+05:30",
+    "registeredBy": "arn:aws:iam::582604091763:user/aluthranga"
+}

@@ -1,0 +1,20 @@
+{
+    "ServiceName": "openclaw-backend",
+    "SourceConfiguration": {
+        "ImageRepository": {
+            "ImageIdentifier": "582604091763.dkr.ecr.us-east-1.amazonaws.com/openclaw-backend:latest",
+            "ImageConfiguration": {
+                "Port": "8000"
+            },
+            "ImageRepositoryType": "ECR"
+        },
+        "AuthenticationConfiguration": {
+            "AccessRoleArn": "arn:aws:iam::582604091763:role/AppRunnerECRAccessRole"
+        },
+        "AutoDeploymentsEnabled": true
+    },
+    "InstanceConfiguration": {
+        "Cpu": "1 vCPU",
+        "Memory": "2 GB"
+    }
+}

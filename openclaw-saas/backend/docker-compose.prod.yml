@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  backend:
+    image: openclaw-backend:latest
+    container_name: openclaw-backend
+    restart: always
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - ./sessions:/app/app/whatsapp/sessions
+    env_file:
+      - ./backend.env
+    networks:
+      - backend_default
+
+  frontend:
+    image: openclaw-frontend:latest
+    container_name: openclaw-frontend
+    restart: always
+    ports:
+      - "127.0.0.1:3000:3000"
+    env_file:
+      - ./frontend.env
+    depends_on:
+      - backend
+    networks:
+      - backend_default
+
+networks:
+  backend_default:
+    external: true

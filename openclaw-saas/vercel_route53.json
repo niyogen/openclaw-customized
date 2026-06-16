@@ -1,0 +1,18 @@
+{
+  "Comment": "Add Vercel Custom Domain",
+  "Changes": [
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "portal.openclaw.niyogen.com",
+        "Type": "A",
+        "TTL": 300,
+        "ResourceRecords": [
+          {
+            "Value": "76.76.21.21"
+          }
+        ]
+      }
+    }
+  ]
+}

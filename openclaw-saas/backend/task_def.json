@@ -1,0 +1,88 @@
+{
+    "taskDefinition": {
+        "taskDefinitionArn": "arn:aws:ecs:us-east-1:582604091763:task-definition/openclaw-backend:11",
+        "containerDefinitions": [
+            {
+                "name": "openclaw-backend",
+                "image": "582604091763.dkr.ecr.us-east-1.amazonaws.com/openclaw-backend:v3",
+                "cpu": 0,
+                "portMappings": [
+                    {
+                        "containerPort": 8000,
+                        "hostPort": 8000,
+                        "protocol": "tcp"
+                    }
+                ],
+                "essential": true,
+                "environment": [
+                    {
+                        "name": "ENVIRONMENT",
+                        "value": "production"
+                    },
+                    {
+                        "name": "DATABASE_URL",
+                        "value": "postgresql://postgres:SuperSecretPassword123@openclaw-saas-db.cmt466aga8u0.us-east-1.rds.amazonaws.com:5432/postgres"
+                    }
+                ],
+                "mountPoints": [],
+                "volumesFrom": [],
+                "logConfiguration": {
+                    "logDriver": "awslogs",
+                    "options": {
+                        "awslogs-group": "/ecs/openclaw-backend",
+                        "awslogs-region": "us-east-1",
+                        "awslogs-stream-prefix": "ecs"
+                    }
+                },
+                "systemControls": []
+            }
+        ],
+        "family": "openclaw-backend",
+        "taskRoleArn": "arn:aws:iam::582604091763:role/ecsTaskRole",
+        "executionRoleArn": "arn:aws:iam::582604091763:role/ecsTaskExecutionRole",
+        "networkMode": "awsvpc",
+        "revision": 11,
+        "volumes": [],
+        "status": "ACTIVE",
+        "requiresAttributes": [
+            {
+                "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
+            },
+            {
+                "name": "ecs.capability.execution-role-awslogs"
+            },
+            {
+                "name": "com.amazonaws.ecs.capability.ecr-auth"
+            },
+            {
+                "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
+            },
+            {
+                "name": "com.amazonaws.ecs.capability.task-iam-role"
+            },
+            {
+                "name": "ecs.capability.execution-role-ecr-pull"
+            },
+            {
+                "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+            },
+            {
+                "name": "ecs.capability.task-eni"
+            }
+        ],
+        "placementConstraints": [],
+        "compatibilities": [
+            "EC2",
+            "MANAGED_INSTANCES",
+            "FARGATE"
+        ],
+        "requiresCompatibilities": [
+            "FARGATE"
+        ],
+        "cpu": "256",
+        "memory": "512",
+        "registeredAt": "2026-05-03T13:45:40.332000+05:30",
+        "registeredBy": "arn:aws:iam::582604091763:user/aluthranga"
+    },
+    "tags": []
+}

@@ -1,0 +1,18 @@
+{
+  "Comment": "DNS validation for openclaw.niyogen.com",
+  "Changes": [
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "_aa95a5dd599fcfc030571fd726425da4.openclaw.niyogen.com.",
+        "Type": "CNAME",
+        "TTL": 300,
+        "ResourceRecords": [
+          {
+            "Value": "_73428b2d71cf4bc9fac78ce5cf8ece70.jkddzztszm.acm-validations.aws."
+          }
+        ]
+      }
+    }
+  ]
+}

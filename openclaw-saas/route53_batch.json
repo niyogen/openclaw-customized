@@ -1,0 +1,17 @@
+{
+  "Comment": "Alias record for ALB",
+  "Changes": [
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "openclaw.niyogen.com",
+        "Type": "A",
+        "AliasTarget": {
+          "HostedZoneId": "Z35SXDOTRQ7X7K",
+          "DNSName": "dualstack.openclaw-backend-alb-416350564.us-east-1.elb.amazonaws.com.",
+          "EvaluateTargetHealth": true
+        }
+      }
+    }
+  ]
+}
