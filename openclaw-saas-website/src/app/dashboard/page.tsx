@@ -5,6 +5,7 @@ import Link from 'next/link';
 import ChatTab from './ChatTab';
 import DocumentsTab from './DocumentsTab';
 import { ActivityTab, SessionsTab, LiveLogsTab } from './ActivitySessionsLogs';
+import OpenClawTab from './OpenClawTab';
 
 const categories = ['All', 'Models', 'Communication', 'Productivity', 'Smart Home', 'System'];
 
@@ -782,6 +783,14 @@ export default function DashboardPage() {
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" /></svg>
             Chat
           </button>
+          {tenantConfig?.openclaw_enabled && (
+            <button onClick={() => handleTabChange('openclaw')} className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all font-medium text-sm text-left ${activeTab === 'openclaw' ? 'bg-white text-black shadow-lg' : 'text-zinc-400 hover:text-white hover:bg-zinc-950'}`}>
+              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+              OpenClaw Playground
+            </button>
+          )}
           <button onClick={() => handleTabChange('documents')} className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all font-medium text-sm text-left ${activeTab === 'documents' ? 'bg-white text-black shadow-lg' : 'text-zinc-400 hover:text-white hover:bg-zinc-950'}`}>
             <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -837,9 +846,12 @@ export default function DashboardPage() {
             {activeTab === 'livelogs' && hasPaid && (
               <div className="flex-1 overflow-hidden"><LiveLogsTab subdomain={tenantSubdomain} backendUrl={BACKEND_URL} /></div>
             )}
+            {activeTab === 'openclaw' && hasPaid && tenantConfig?.openclaw_enabled && (
+              <div className="flex-1 overflow-hidden"><OpenClawTab subdomain={tenantSubdomain} backendUrl={BACKEND_URL} /></div>
+            )}
 
             {/* ── EXISTING TABS ── */}
-            {!['chat','activity','sessions','livelogs','documents'].includes(activeTab) && (
+            {!['chat','activity','sessions','livelogs','documents','openclaw'].includes(activeTab) && (
             <div className="flex-1 overflow-y-auto p-6 md:p-12">
             <div className="max-w-6xl mx-auto">
 
